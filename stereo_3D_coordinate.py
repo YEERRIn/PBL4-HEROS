@@ -82,7 +82,7 @@ def run(weights='yolov8x.pt', device='cpu', view_img=True, line_thickness=2):
                     if X is not None:
                         print(f"3D Coordinates for person {track_id}: X={X}, Y={Y}, Z={Z}")
 
-            cv2.putText(frame, f"inside: {people_count}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+            cv2.putText(frame, f"inside: {people_count//2}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
 
         if view_img:
             if vid_frame_count == 1:
